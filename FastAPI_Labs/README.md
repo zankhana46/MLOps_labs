@@ -1,3 +1,8 @@
+Submission Note
+---
+Instead of the original DecisionTreeClassifier model I have used an ensemble ML technique of Random Forest and trained the data on it.
+
+My assets folder have the screenshots of working to evaluate the workflow of model training and API
 
 ---
 - Video Explanation: [FastAPI lab](https://www.youtube.com/watch?v=KReburHqRIQ&list=PLcS4TrUUc53LeKBIyXAaERFKBJ3dvc9GZ&index=4)
