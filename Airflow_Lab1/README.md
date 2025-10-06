@@ -1,3 +1,7 @@
+# Submission Note
+
+I have used Hierarchical clustering instead of Kmeans clustering used in original code. I had to make correspnding changes in the DAG as well. assets folder has snippets of these significant changes made to the code to implement this submission.
+
 # Airflow lab
 
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
