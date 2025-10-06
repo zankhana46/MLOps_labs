@@ -1,0 +1,40 @@
+[2025-09-24T00:57:50.123+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-24T00:57:50.137+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Airflow_Lab1.load_model_task manual__2025-09-24T00:57:38.044734+00:00 [queued]>
+[2025-09-24T00:57:50.140+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Airflow_Lab1.load_model_task manual__2025-09-24T00:57:38.044734+00:00 [queued]>
+[2025-09-24T00:57:50.140+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-24T00:57:50.146+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_model_task> on 2025-09-24 00:57:38.044734+00:00
+[2025-09-24T00:57:50.154+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=480) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-24T00:57:50.155+0000] {standard_task_runner.py:63} INFO - Started process 489 to run task
+[2025-09-24T00:57:50.156+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Airflow_Lab1', 'load_model_task', 'manual__2025-09-24T00:57:38.044734+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmpilimcycv']
+[2025-09-24T00:57:50.157+0000] {standard_task_runner.py:91} INFO - Job 48: Subtask load_model_task
+[2025-09-24T00:57:50.175+0000] {task_command.py:426} INFO - Running <TaskInstance: Airflow_Lab1.load_model_task manual__2025-09-24T00:57:38.044734+00:00 [running]> on host 01ca18496a79
+[2025-09-24T00:57:50.216+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='your_name' AIRFLOW_CTX_DAG_ID='Airflow_Lab1' AIRFLOW_CTX_TASK_ID='load_model_task' AIRFLOW_CTX_EXECUTION_DATE='2025-09-24T00:57:38.044734+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-24T00:57:38.044734+00:00'
+[2025-09-24T00:57:50.216+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-24T00:57:50.251+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-24T00:57:50.254+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/src/lab.py", line 104, in load_hierarchical_model
+    raise ValueError("Not enough samples in test data for clustering. At least 2 required.")
+ValueError: Not enough samples in test data for clustering. At least 2 required.
+[2025-09-24T00:57:50.281+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Airflow_Lab1, task_id=load_model_task, run_id=manual__2025-09-24T00:57:38.044734+00:00, execution_date=20250924T005738, start_date=20250924T005750, end_date=20250924T005750
+[2025-09-24T00:57:50.295+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 48 for task load_model_task (Not enough samples in test data for clustering. At least 2 required.; 489)
+[2025-09-24T00:57:50.340+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-09-24T00:57:50.351+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-24T00:57:50.352+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
