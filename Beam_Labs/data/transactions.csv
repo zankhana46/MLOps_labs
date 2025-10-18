@@ -1,0 +1,11 @@
+transaction_id,timestamp,category,product,price,quantity
+t1,2024-08-01T09:00:00,Books,Intro to NLP,39.99,1
+t2,2024-08-01T09:05:12,Books,Deep Learning,59.50,1
+t3,2024-08-01T10:20:00,Electronics,USB-C Cable,9.99,3
+t4,2024-08-01T11:10:00,Groceries,Apples,2.50,6
+t5,2024-08-01T13:45:00,Electronics,Wireless Mouse,24.99,2
+t6,2024-08-01T14:00:00,Books,Deep Learning,59.50,1
+t7,2024-08-01T15:30:00,Groceries,Milk,3.25,2
+t8,2024-08-01T16:00:00,Electronics,USB-C Cable,9.99,1
+bad_row_missing_quantity,2024-08-01T17:00:00,Books,Intro to NLP,39.99,
+t9,2024-08-01T18:15:00,Books,Transformers 101,45.00,2
