@@ -20,3 +20,5 @@ venv/
 # Lab outputs
 Beam_Labs/outputs/
 Beam_Labs/*.log
+.DS_Store
+Airflow_Lab1/logs/
