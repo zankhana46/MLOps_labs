@@ -4,6 +4,29 @@ Instead of the original DecisionTreeClassifier model I have used an ensemble ML 
 
 My assets folder have the screenshots of working to evaluate the workflow of model training and API
 
+API Enhancements - Version 2.0
+Brief Overview
+This enhanced version adds 8 new endpoints to the original API, providing comprehensive ML serving capabilities:
+Prediction Endpoints:
+
+/predict/detailed - Returns prediction with class name and confidence score
+
+/predict/probabilities - Shows probability distribution across all 3 species
+
+/predict/batch - Process multiple samples in a single request
+
+Model Introspection Endpoints:
+
+/model/info - Model metadata (type, parameters, features)
+
+/model/feature-importance - Which features matter most for predictions
+
+/model/statistics - Random Forest ensemble statistics (trees, depth, nodes)
+
+Utility Endpoints:
+
+/info - Complete API documentation and available endpoints
+
 ---
 - Video Explanation: [FastAPI lab](https://www.youtube.com/watch?v=KReburHqRIQ&list=PLcS4TrUUc53LeKBIyXAaERFKBJ3dvc9GZ&index=4)
 - Blog: [FastAPI Lab-1](https://www.mlwithramin.com/blog/fastapi-lab1)
