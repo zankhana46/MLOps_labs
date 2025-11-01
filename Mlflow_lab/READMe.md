@@ -62,7 +62,7 @@ brew install libomp
 ```
 
 5. **Download dataset:**
-- Get `vgsales.csv` from [Kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales)
+- Download `data.csv` from [Kaggle](https://www.kaggle.com/datasets/gregorut/videogamesales)
 - Place it in the project root directory
 
 ---
