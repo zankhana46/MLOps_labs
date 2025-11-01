@@ -1,4 +1,4 @@
-# 🎮 Video Game Blockbuster Prediction - MLflow Project
+# 🎮 Video Game Blockbuster Prediction - MLflow Lab
 
 A complete end-to-end MLOps pipeline using MLflow to predict whether a video game will be a blockbuster (>1M sales) based on platform, year, genre, and publisher.
 
