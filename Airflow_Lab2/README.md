@@ -1,5 +1,5 @@
 # Airflow Lab Instructions and Description
-
+ 
 ## Introduction
 This document provides a detailed breakdown of the two DAGs (`Airflow_Lab2` and `Airflow_Lab2_Flask`) along with explanations of each function within the DAG files. These explanations aim to clarify the purpose and functionality of each task and function in the Airflow workflows.
 
