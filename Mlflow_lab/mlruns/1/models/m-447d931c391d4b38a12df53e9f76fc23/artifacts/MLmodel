@@ -1,0 +1,30 @@
+artifact_path: /Users/zankhanamehta/Documents/NEU/MLOps/MLOps_labs/Mlflow_lab/mlruns/1/models/m-447d931c391d4b38a12df53e9f76fc23/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.4
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 2.1.3
+is_signature_from_type_hint: false
+mlflow_version: 3.5.1
+model_id: m-447d931c391d4b38a12df53e9f76fc23
+model_size_bytes: 349973
+model_uuid: m-447d931c391d4b38a12df53e9f76fc23
+prompts: null
+run_id: 6304680ce9184b68ba0d711e1f4985ab
+signature:
+  inputs: '[{"type": "long", "name": "Platform", "required": true}, {"type": "double",
+    "name": "Year", "required": true}, {"type": "long", "name": "Genre", "required":
+    true}, {"type": "long", "name": "Publisher", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-01 21:44:21.479235'

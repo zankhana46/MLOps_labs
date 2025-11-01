@@ -1,0 +1,30 @@
+artifact_path: /Users/zankhanamehta/Documents/NEU/MLOps/MLOps_labs/Mlflow_lab/mlruns/1/models/m-d3e5a00fc96646b19e63f082daf505f4/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.2
+is_signature_from_type_hint: false
+mlflow_version: 3.5.1
+model_id: m-d3e5a00fc96646b19e63f082daf505f4
+model_size_bytes: 867
+model_uuid: m-d3e5a00fc96646b19e63f082daf505f4
+prompts: null
+run_id: d803572bc5a440238368bc09d68a8019
+signature:
+  inputs: '[{"type": "long", "name": "Platform", "required": true}, {"type": "double",
+    "name": "Year", "required": true}, {"type": "long", "name": "Genre", "required":
+    true}, {"type": "long", "name": "Publisher", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-01 21:41:17.082215'
