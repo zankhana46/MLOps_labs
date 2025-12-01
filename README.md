@@ -9,4 +9,4 @@ This repository contains all my labs for the MLOps course.
 - Lab 3: Apache Beam
 - Lab 4: Mlflow lab on video game dataset
 - Lab 5: Model development with Ray
-- Lab 5: Knowledge Distillation
+- Lab 6: Knowledge Distillation
